@@ -1,0 +1,89 @@
+<div class="app-content content" th:fragment="student_content" xmlns:th="http://www.thymeleaf.org">
+    <div class="content-wrapper">
+        <div class="content-body"><!-- Statistics with grouped cards -->
+            <div class="row justify-content-between">
+                <div class="col-12">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active show" id="base-tab1" data-toggle="tab" aria-controls="tab1" href="#tab1" aria-expanded="true">Tab 1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="base-tab2" data-toggle="tab" aria-controls="tab2" href="#tab2" aria-expanded="false">Tab 2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="base-tab3" data-toggle="tab" aria-controls="tab3" href="#tab3" aria-expanded="false">Tab 3</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content px-1 pt-1">
+                                <div role="tabpanel" class="tab-pane active show" id="tab1" aria-expanded="true" aria-labelledby="base-tab1">
+                                </div>
+                                <div class="tab-pane" id="tab2" aria-labelledby="base-tab2">
+                                    <div class="form-group p-3">
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#studentModal">
+                                            Add Student
+                                        </button>
+                                        <div class="modal fade text-left" id="studentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel35" style="display: none;" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h3 class="modal-title" id="myModalLabel35"> Student Modal</h3>
+                                                        <button type="button" class="close" id="studentModalCross" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <form class="studentForm" id="studentForm">
+                                                        <input type="hidden" name="id" id="id"/>
+                                                        <div class="modal-body">
+                                                            <div class="form-group">
+                                                                <label for="name">Name</label>
+                                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name"/>
+                                                            </div>
+                                                            <br/>
+                                                            <div class="form-group">
+                                                                <label for="department">Department</label>
+                                                                <input type="text" class="form-control" name="department" id="department" placeholder="Name"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <input type="reset" class="btn btn-outline-secondary btn-lg" id="studentModalClose" data-dismiss="modal" value="close"/>
+                                                            <input type="button" class="btn btn-outline-primary btn-lg" id="studentSubmitButton" value="Submit"/>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Name</th>
+                                                    <th>Dept</th>
+                                                    <th>Edit</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="studentTableBody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab3" aria-labelledby="base-tab3">
+                                    <p>Biscuit ice cream halvah candy canes bear claw ice cream cake chocolate bar donut. Toffee cotton candy liquorice. Oat cake lemon drops gingerbread dessert caramels. Sweet dessert jujubes powder sweet sesame snaps.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

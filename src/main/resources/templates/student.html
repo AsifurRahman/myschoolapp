@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="head :: head"></head>
+<body class="horizontal-layout horizontal-menu 2-columns   menu-expanded" data-open="hover" data-menu="horizontal-menu" data-col="2-columns">
+
+<!-- fixed-top-->
+<nav th:replace="top_bar :: topbar"></nav>
+
+<!-- ////////////////////////////////////////////////////////////////////////////-->
+<div th:replace="nav_bar :: navbar" ></div>
+
+
+<div th:replace="student_content :: student_content"></div>
+<!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+<footer th:replace="footer :: footer"></footer>
+
+<!-- BEGIN VENDOR JS-->
+<script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+<script src="custom-js/student.js"></script>
+<script src="custom-js/jquery.serializejson.js"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="../../../app-assets/vendors/js/ui/jquery.sticky.js"></script>
+<script src="../../../app-assets/vendors/js/charts/jquery.sparkline.min.js"></script>
+<script src="../../../app-assets/vendors/js/charts/chartist.min.js"></script>
+<script src="../../../app-assets/vendors/js/charts/chartist-plugin-tooltip.min.js"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN MODERN JS-->
+<script src="../../../app-assets/js/core/app-menu.js"></script>
+<script src="../../../app-assets/js/core/app.js"></script>
+<!-- END MODERN JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="../../../app-assets/js/scripts/ui/breadcrumbs-with-stats.js"></script>
+<script src="../../../app-assets/js/scripts/pages/dashboard-support.js"></script>
+<!-- END PAGE LEVEL JS-->
+</body>
+</html>
